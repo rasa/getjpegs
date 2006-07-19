@@ -1,0 +1,25 @@
+# Microsoft Developer Studio Generated Dependency File, included by jpgdlib.mak
+
+.\h2v2.cpp : \
+	".\jpegdecoder.h"\
+	".\jpegdecoder.inl"\
+	".\main.h"\
+	
+
+.\idct.cpp : \
+	".\jpegdecoder.h"\
+	".\jpegdecoder.inl"\
+	".\main.h"\
+	
+
+.\jidctfst.cpp : \
+	".\jpegdecoder.h"\
+	".\jpegdecoder.inl"\
+	".\main.h"\
+	
+
+.\jpegdecoder.cpp : \
+	".\jpegdecoder.h"\
+	".\jpegdecoder.inl"\
+	".\main.h"\
+	
