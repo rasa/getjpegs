@@ -1,10 +1,10 @@
 all:
-	$(CYGENV) nmake /f getjpegs.mak CFG="getjpegs - Win32 Release"	all
-	$(CYGENV) nmake /f getjpegs.mak CFG="getjpegs - Win32 Debug"	all
+	$(MAKE)/f getjpegs.mak CFG="getjpegs - Win32 Release"	all
+	$(MAKE)/f getjpegs.mak CFG="getjpegs - Win32 Debug"	all
 
 clean:
-	$(CYGENV) nmake /f getjpegs.mak CFG="getjpegs - Win32 Release"	clean
-	$(CYGENV) nmake /f getjpegs.mak CFG="getjpegs - Win32 Debug"	clean
+	$(MAKE)/f getjpegs.mak CFG="getjpegs - Win32 Release"	clean
+	$(MAKE)/f getjpegs.mak CFG="getjpegs - Win32 Debug"	clean
 
 realclean: clean
 	-cmd /c del /s *.bak
