@@ -1,3 +1,8 @@
+#ifdef _MSC_VER
+#pragma warning(disable:4554)
+#pragma warning(disable:4996)
+#endif
+
 //------------------------------------------------------------------------------
 // jpegdecoder.cpp
 // Small JPEG Decoder Library v0.93b
@@ -83,9 +88,11 @@ void jpeg_decoder::terminate(int status)
 // later deallocation by free_all_blocks().
 void *jpeg_decoder::alloc(int n)
 {
+  int i;
   // Find a free slot. The number of allocated slots will
   // always be very low, so a linear search is good enough.
-  for (int i = 0; i < JPGD_MAXBLOCKS; i++)
+
+  for (i = 0; i < JPGD_MAXBLOCKS; i++)
   {
     if (blocks[i] == NULL)
       break;
@@ -1079,7 +1086,8 @@ void jpeg_decoder::decode_next_row(void)
 
       Phuff_tables_t Ph = h[comp_ac_tab[component_id]];
 
-      for (int k = 1; k < 64; k++)
+      int k;
+      for (k = 1; k < 64; k++)
       {
         s = huff_decode(Ph);
 
@@ -1201,7 +1209,8 @@ void jpeg_decoder::decode_next_row_mmx(void)
 
       Phuff_tables_t Ph = h[comp_ac_tab[component_id]];
 
-      for (int k = 1; k < 64; k++)
+      int k;
+      for (k = 1; k < 64; k++)
       {
         s = huff_decode_mmx(Ph);
 

@@ -1,3 +1,8 @@
+#ifdef _MSC_VER
+#pragma warning(disable:4554)
+#pragma warning(disable:4996)
+#endif
+
 //
 // 2D IDCT
 // Derived from an older version of the IJG's JPEG software.
