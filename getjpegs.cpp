@@ -124,6 +124,7 @@ typedef struct _GETVERSIONOUTPARAMS {
 } GETVERSIONOUTPARAMS, *PGETVERSIONOUTPARAMS, *LPGETVERSIONOUTPARAMS;
 
    //  IDE registers
+#ifndef _WINIOCTL_
 typedef struct _IDEREGS {
    BYTE bFeaturesReg;       // Used for specifying SMART "commands".
    BYTE bSectorCountReg;    // IDE sector count register
@@ -146,11 +147,13 @@ typedef struct _SENDCMDINPARAMS {
    DWORD     dwReserved[4]; //  For future use.
    BYTE      bBuffer[1];    //  Input buffer.
 } SENDCMDINPARAMS, *PSENDCMDINPARAMS, *LPSENDCMDINPARAMS;
+#endif
 
    //  Valid values for the bCommandReg member of IDEREGS.
 #define  IDE_ATAPI_IDENTIFY  0xA1  //  Returns ID sector for ATAPI.
 #define  IDE_ATA_IDENTIFY    0xEC  //  Returns ID sector for ATA.
 
+#ifndef _WINIOCTL_
    // Status returned from driver
 typedef struct _DRIVERSTATUS {
    BYTE  bDriverError;  //  Error code from driver, or 0 if no error.
@@ -166,6 +169,7 @@ typedef struct _SENDCMDOUTPARAMS {
    DRIVERSTATUS  DriverStatus;  //  Driver status structure.
    BYTE          bBuffer[1];    //  Buffer of arbitrary length in which to store the data read from the                                                       // drive.
 } SENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS;
+#endif
 
    // Define global buffers.
 BYTE IdOutCmd [sizeof (SENDCMDOUTPARAMS) + IDENTIFY_BUFFER_SIZE - 1];
