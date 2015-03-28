@@ -68,11 +68,16 @@ Don't overwrite files, use the next available number
 #include <stddef.h>
 #include <string.h>
 #include <windows.h>
-#include <winioctl.h>
 //#include <Winbase.h>
 #include <direct.h>
 
 #include "jpegdecoder.h"
+
+#if _MSC_VER >= 1500
+#include <winioctl.h>
+#else
+#undef _WINIOCTL_
+#endif
 
 #include "version.h"
 
