@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jpg2tga", "..\jpg2tga\jpg2tga.vcproj", "{7819B5BA-CC1F-4753-B988-08B8F4539A0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F93756DE-1BB4-4687-AD43-9CB8622AAF74} = {F93756DE-1BB4-4687-AD43-9CB8622AAF74}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jpgdlib", "..\jpgdlib\jpgdlib.vcproj", "{F93756DE-1BB4-4687-AD43-9CB8622AAF74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67AD5607-8EFF-414A-9541-19413CF4AA01}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\jpegid\documents\jpeg-spec-itu-t81.pdf = ..\..\jpegid\documents\jpeg-spec-itu-t81.pdf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7819B5BA-CC1F-4753-B988-08B8F4539A0A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7819B5BA-CC1F-4753-B988-08B8F4539A0A}.Debug|Win32.Build.0 = Debug|Win32
+		{7819B5BA-CC1F-4753-B988-08B8F4539A0A}.Release|Win32.ActiveCfg = Release|Win32
+		{7819B5BA-CC1F-4753-B988-08B8F4539A0A}.Release|Win32.Build.0 = Release|Win32
+		{F93756DE-1BB4-4687-AD43-9CB8622AAF74}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F93756DE-1BB4-4687-AD43-9CB8622AAF74}.Debug|Win32.Build.0 = Debug|Win32
+		{F93756DE-1BB4-4687-AD43-9CB8622AAF74}.Release|Win32.ActiveCfg = Release|Win32
+		{F93756DE-1BB4-4687-AD43-9CB8622AAF74}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

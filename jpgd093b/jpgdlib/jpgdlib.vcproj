@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="jpgdlib"
-	ProjectGUID="{F107A6A1-DAE3-47B2-A609-9591DF4B0F93}"
-	TargetFrameworkVersion="131072"
+	ProjectGUID="{F93756DE-1BB4-4687-AD43-9CB8622AAF74}"
 	>
 	<Platforms>
 		<Platform
@@ -42,6 +41,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="2"
+				AdditionalIncludeDirectories="..\inc"
 				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USE_NON_INTEL_COMPILER"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -51,7 +51,6 @@
 				ObjectFile=".\Release/"
 				ProgramDataBaseFileName=".\Release/"
 				WarningLevel="3"
-				SuppressStartupBanner="true"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -66,7 +65,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile=".\Release\jpgdlib.lib"
+				OutputFile="..\lib\jpgdlib.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -114,6 +113,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="..\inc"
 				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS;_USE_NON_INTEL_COMPILER"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -122,8 +122,8 @@
 				AssemblerListingLocation=".\Debug/"
 				ObjectFile=".\Debug/"
 				ProgramDataBaseFileName=".\Debug/"
+				BrowseInformation="1"
 				WarningLevel="3"
-				SuppressStartupBanner="true"
 				DebugInformationFormat="4"
 			/>
 			<Tool
@@ -139,7 +139,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="Debug\jpgdlib_d.lib"
+				OutputFile="..\lib\jpgdlib_d.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -176,6 +176,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;$(NoInherit)"
 					/>
 				</FileConfiguration>
@@ -184,6 +185,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS;$(NoInherit)"
 					/>
 				</FileConfiguration>
@@ -196,6 +198,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -204,6 +207,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -216,6 +220,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -224,6 +229,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -236,6 +242,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -244,6 +251,7 @@
 					>
 					<Tool
 						Name="VCCLCompilerTool"
+						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 					/>
 				</FileConfiguration>
@@ -254,18 +262,22 @@
 			Filter="h;hpp;hxx;hm;inl"
 			>
 			<File
-				RelativePath="jpegdecoder.h"
+				RelativePath="..\inc\jpegdecoder.h"
 				>
 			</File>
 			<File
-				RelativePath="jpegdecoder.inl"
+				RelativePath="..\inc\jpegdecoder.inl"
 				>
 			</File>
 			<File
-				RelativePath="main.h"
+				RelativePath="..\inc\main.h"
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath="..\readme.txt"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

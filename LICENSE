@@ -18,3 +18,14 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+----------------------------------------------------------------------
+
+Portions of this code are copyright their respective authors:
+
+H2v2.cpp: Copyright (C) 1994-2000 Rich Geldreich. LGPL 2.1 licensed
+idct.cpp: Copyright (C) 1991-1998, Thomas G. Lane: License in jpgd093b/readme.txt
+jidctfst.cpp: Copyright (C) 1994-1996, Thomas G. Lane: License in jpgd093b/readme.txt
+jpegdecoder.cpp: Copyright (C) 1994-2000 Rich Geldreich. LGPL 2.1 licensed
+jpegdecoder.h: Copyright (C) 1994-2000 Rich Geldreich. LGPL 2.1 licensed
+main.h: Copyright (C) 1994-2000 Rich Geldreich. LGPL 2.1 licensed

@@ -9,9 +9,15 @@
 	{$(INCLUDE)}"stralign.h"\
 	{$(INCLUDE)}"tvout.h"\
 	{$(INCLUDE)}"winefs.h"\
-	{$(INCLUDE)}"ver_defaults.h"\
 	".\jpegdecoder.h"\
 	".\jpegdecoder.inl"\
 	".\main.h"\
 	".\version.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
+	
+
+.\getjpegs.rc : \
+	".\getjpegs.ico"\
+	".\version.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
 	

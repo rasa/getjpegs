@@ -99,6 +99,14 @@ SOURCE=.\version.h
 # Begin Group "Resource Files"
 
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\getjpegs.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\getjpegs.rc
+# End Source File
 # End Group
 # End Target
 # End Project
