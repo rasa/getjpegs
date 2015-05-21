@@ -1,3 +1,7 @@
+## 1.6 (unreleased)
+
+  * Update Makefile
+
 ## 1.5 (07-Apr-2015)
 
   * Add version number to executable
